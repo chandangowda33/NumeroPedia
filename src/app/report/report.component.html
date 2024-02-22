@@ -1,0 +1,90 @@
+<app-loading-spinner *ngIf="!report" class="loader"></app-loading-spinner>
+<div class="main_container black_background" *ngIf="report">
+  <a>
+    <img class="logo" src="../../assets/logo.png" alt="Numeropedia Logo" />
+  </a>
+  <div class="welcome_container">
+    <div class="welcome">
+      <h3 class="name_welcome">Hello {{ fullname }}</h3>
+      <p class="personal_details">Your Date of Birth: {{ dob }}</p>
+      <p class="personal_details">Your Gender: {{ gender }}</p>
+      <!-- below report is asynchronous and this div loads before we get value so added ngif -->
+      <p class="personal_details" *ngIf="report && report.mulankNumber">
+        Your Mulank Number: {{ report.mulankNumber }}
+      </p>
+      <p class="personal_details" *ngIf="report && report.mulankQualities">
+        Your Governing Star: {{ report.mulankQualities.star }}
+      </p>
+      <p class="personal_details" *ngIf="report && report.destinyNumber">
+        Your Destiny Number: {{ report.destinyNumber }}
+      </p>
+      <p class="personal_details" *ngIf="report && report.luckyNumberString">
+        {{ report.luckyNumberString }}
+      </p>
+      <p class="personal_details" *ngIf="report && report.enemyNumberString">
+        {{ report.enemyNumberString }}
+      </p>
+    </div>
+    <img
+      class="classicImg"
+      src="./../../assets/img/design_image.jpg"
+      alt="design image"
+    />
+  </div>
+  <div class="note_container">
+    <i class="material-icons note_icon">note</i>
+
+    <p class="note_description">
+      NumeroPedia uses different parametes like Mulank number, Destiny number,
+      Numeroscope to generate your Numerology report. If come characterstics or
+      attributes gets repeated in different parameters it means that
+      characterstic is strong for you
+    </p>
+  </div>
+
+  <div class="mulank_container">
+    <h5 class="mulank_description">
+      Mulank number uses your birth date to determine your governing star and
+      characters and this characters will have strong influence on your life
+    </h5>
+    <h4 class="mulank_star_governing" *ngIf="report && report.mulankNumber">
+      Your Mulank number is {{ report.mulankNumber }}, Governing Star is
+      {{ report.mulankQualities.star }}
+    </h4>
+    <p class="mulank_deatils">Based on your Mulank, below is the report</p>
+    <div
+      class="mulank_characterstic_div green_shadow"
+      *ngFor="let characterstic of pros"
+    >
+      <p class="mulank_characterstic">{{ characterstic }}</p>
+    </div>
+    <div
+      class="mulank_characterstic_div yellow_shadow"
+      *ngFor="let characterstic of neutral"
+    >
+      <p class="mulank_characterstic">{{ characterstic }}</p>
+    </div>
+    <div
+      class="mulank_characterstic_div red_shadow"
+      *ngFor="let characterstic of cons"
+    >
+      <p class="mulank_characterstic">{{ characterstic }}</p>
+    </div>
+  </div>
+  <app-numero-scope-report></app-numero-scope-report>
+  <div class="key_remedy">
+    <div class="key_container" *ngIf="report && report.mulankQualities.key">
+      <p class="key">Key thing about your DOB</p>
+      <p class="strong">{{ report.mulankQualities.key }}</p>
+    </div>
+    <div
+      class="remedies_container"
+      *ngIf="report && report.mulankQualities.remedies"
+    >
+      <p class="remedies">
+        Things you could do to to avoid some negative impacts
+      </p>
+      <p class="strong">{{ report.mulankQualities.remedies }}</p>
+    </div>
+  </div>
+</div>

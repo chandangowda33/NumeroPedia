@@ -1,0 +1,139 @@
+.numeroscope_container {
+  display: flex;
+  flex-direction: column;
+  /* background-color: black; */
+  align-items: center;
+}
+
+.numeroscope_description {
+  color: #fdcf04;
+  font-weight: 500;
+  font-size: 2.4rem;
+  text-align: center;
+  padding: 5.4rem 5% 3.6rem 5%;
+  word-spacing: 1.2px;
+  line-height: 0.9;
+  word-spacing: 1.2px;
+  line-height: 0.9;
+  letter-spacing: 0.1rem;
+}
+
+.numeroscope_carousel {
+  display: flex;
+  margin: 1.2rem 7.2rem 3.6rem 7.2rem;
+  border-radius: 1.2rem;
+  background-color: #001928;
+  width: 85%;
+}
+
+.numeroscope_grid_container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: -2.4rem 2.4rem;
+  flex: 0 0 35%;
+  background-color: #ffdd43;
+  border-radius: 1.2rem;
+
+  font-size: 1.8rem;
+}
+
+.numeroscope_grid_heading {
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #242424;
+}
+
+.numeroscope_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 1.2rem;
+  column-gap: 3.6rem;
+  color: #0808080e;
+  font-size: 9rem;
+}
+
+.numeroscope_number_dark {
+  color: #080808;
+}
+
+.numeroscope_details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 0 70rem;
+}
+
+.numeroscope_characterstic {
+  flex: 0 0 85%;
+  color: #4cb9fd;
+  font-size: 3.6rem;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  word-spacing: 0.1rem;
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+
+.navigation_buttons {
+  display: flex;
+  flex: 0 0 15%;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.traint_info {
+  color: #ffd000;
+  font-size: 1.2rem;
+}
+
+.btn:link,
+.btn:visited,
+.btn {
+  background-color: #ffdd43;
+  color: #012236;
+  border: none;
+  border-radius: 50%;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #ffd000;
+  box-shadow: 0 0 1.2rem #ffd000;
+  transition: all 0.2s;
+}
+
+.icon {
+  padding: 0.6rem;
+  stroke: #001928;
+}
+
+.rajyog_container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: center;
+  margin: 4.8rem 0;
+}
+
+.hurray {
+  font-size: 3.6rem;
+  font-weight: 500;
+  color: #04d8fd;
+}
+
+.rajyogTrait {
+  font-size: 5.4rem;
+  font-weight: 500;
+  text-align: center;
+  word-spacing: 0.2rem;
+  color: #ffd000;
+}
+
+.rajyog_nav {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+}

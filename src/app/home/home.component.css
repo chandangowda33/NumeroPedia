@@ -1,0 +1,101 @@
+.logo {
+  width: 18rem;
+  height: 4.8rem;
+  margin: 1.2rem;
+}
+
+.numbers_img {
+  height: 48rem;
+  width: 36rem;
+}
+
+.welcomeNote {
+  font-size: 5.4rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+  word-spacing: 1.8px;
+}
+
+.main_container {
+  display: flex;
+  /* align-self: stretch; */
+  /* margin-top: -1.8rem; */
+}
+
+.formNote {
+  flex: 0 0 65%;
+  color: #50c1d4;
+  padding: 1.8rem 0 0 4.8rem;
+}
+.enterDetails {
+  color: #61bbff;
+  margin: 4.8rem 0 1.2rem 0.3rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: -0.4px;
+}
+.conceptImage {
+  flex: 0 0 35%; /* flex-grow: 0, flex-shrink: 0, flex-basis: 25% */
+}
+
+.detailsEntry {
+  margin-left: 1.8rem;
+  /* flex: 0 0 75%; */
+}
+
+.numbers_img {
+  box-shadow: 0 0 3.6rem #50c1d4;
+  margin: 5.4rem 0 0 7.2rem;
+}
+
+.form {
+  display: flex;
+  gap: 3.6rem;
+}
+
+.formSet {
+  display: flex;
+  gap: 0.2rem;
+  flex-direction: column;
+  margin-bottom: 0.9rem;
+}
+
+.label {
+  font-size: 1.8rem;
+}
+
+.input {
+  width: 36rem;
+  height: 3.3rem;
+  border-radius: 0.5rem;
+  margin-bottom: 0.8rem;
+  border: 0.2rem solid #08d8fd;
+}
+
+.submit {
+  /* flex: 0 0 25%; */
+  align-self: center;
+  padding: 1.8rem;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  background-color: #e7fd21;
+  font-family: "Rubik", sans-serif;
+  border-radius: 25rem;
+  padding: 1.8rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #000f18;
+  transition: all 0.3s;
+  border: 0;
+  box-shadow: 0 0 0.6rem #ebfc54;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #e5ff00;
+  color: #00101a;
+  box-shadow: 0 0 1.2rem #ebfc54;
+}

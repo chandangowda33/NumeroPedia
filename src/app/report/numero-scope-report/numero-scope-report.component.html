@@ -1,0 +1,96 @@
+<div class="numeroscope_container">
+  <h4 class="numeroscope_description">
+    NumeroScope is a another way of getting to know what our DOB tells about our
+    life. It uses a matrix and some patterns from your DOB, mulank number,
+    destiny number and Kua Number to determine what is your strong field and
+    attributes
+  </h4>
+  <div class="numeroscope_carousel">
+    <div class="numeroscope_grid_container">
+      <h6 class="numeroscope_grid_heading">Your Numeroscope pattern</h6>
+      <div class="numeroscope_grid">
+        <p
+          class="numeroscope_number"
+          [ngClass]="{ numeroscope_number_dark: DOBArray.includes(4) }"
+        >
+          4
+        </p>
+        <p
+          class="numeroscope_number"
+          [ngClass]="{ numeroscope_number_dark: DOBArray.includes(9) }"
+        >
+          9
+        </p>
+        <p
+          class="numeroscope_number"
+          [ngClass]="{ numeroscope_number_dark: DOBArray.includes(2) }"
+        >
+          2
+        </p>
+        <p
+          class="numeroscope_number"
+          [ngClass]="{ numeroscope_number_dark: DOBArray.includes(3) }"
+        >
+          3
+        </p>
+        <p
+          class="numeroscope_number"
+          [ngClass]="{ numeroscope_number_dark: DOBArray.includes(5) }"
+        >
+          5
+        </p>
+        <p
+          class="numeroscope_number"
+          [ngClass]="{ numeroscope_number_dark: DOBArray.includes(7) }"
+        >
+          7
+        </p>
+        <p
+          class="numeroscope_number"
+          [ngClass]="{ numeroscope_number_dark: DOBArray.includes(8) }"
+        >
+          8
+        </p>
+        <p
+          class="numeroscope_number"
+          [ngClass]="{ numeroscope_number_dark: DOBArray.includes(1) }"
+        >
+          1
+        </p>
+        <p
+          class="numeroscope_number"
+          [ngClass]="{ numeroscope_number_dark: DOBArray.includes(6) }"
+        >
+          6
+        </p>
+      </div>
+    </div>
+    <div class="numeroscope_details">
+      <p class="numeroscope_characterstic">
+        {{ numeroTraits[traitNo] }}
+      </p>
+      <div class="navigation_buttons">
+        <button class="btn" (click)="decreaseTraitNo('numerotrait')">
+          <i class="material-icons note_icon icon">keyboard_arrow_left</i>
+        </button>
+        <p class="traint_info">{{ traitNo + 1 }}/{{ numeroTraits.length }}</p>
+        <button class="btn" (click)="increaseTraitNo('numerotrait')">
+          <i class="material-icons note_icon icon">keyboard_arrow_right</i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<div *ngIf="rajyogTraits.length" class="rajyog_container">
+  <h3 class="hurray">Hurray... you have Rajyog in your DOB</h3>
+  <p class="rajyogTrait">{{ rajyogTraits[rajyogTraitNo] }}</p>
+  <div class="rajyog_nav" *ngIf="rajyogTraits.length > 0">
+    <button class="btn " (click)="decreaseTraitNo('rajyog')">
+      <i class="material-icons note_icon icon">keyboard_arrow_left</i>
+    </button>
+    <p class="traint_info">{{ rajyogTraitNo + 1 }}/{{ rajyogTraits.length }}</p>
+    <button class="btn " (click)="increaseTraitNo('rajyog')">
+      <i class="material-icons note_icon icon">keyboard_arrow_right</i>
+    </button>
+  </div>
+</div>
