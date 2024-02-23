@@ -5,6 +5,7 @@ import { CommonModule } from '@angular/common';
 import { NumeroScopeReportComponent } from './numero-scope-report/numero-scope-report.component';
 import { LoadingSpinnerComponent } from './loading-spinner/loading-spinner.component';
 import { Router } from '@angular/router';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-report',
@@ -27,13 +28,16 @@ export class ReportComponent implements OnInit {
   remedies: any;
   noDetailsErrorMsg: string = '';
   private subscription!: Subscription;
+  imageLoaded = false;
 
   constructor(
     private reportService: ReportServiceService,
-    private router: Router
+    private router: Router,
+    private titleService: Title
   ) {}
 
   ngOnInit(): void {
+    this.titleService.setTitle('NumeroPedia| Home');
     if (
       this.reportService.dob == '' ||
       this.reportService.fullName == '' ||
@@ -73,5 +77,9 @@ export class ReportComponent implements OnInit {
   navigateToHome() {
     console.log('clicked');
     this.router.navigate(['/home']);
+  }
+
+  onImageLoad() {
+    this.imageLoaded = true;
   }
 }

@@ -3,6 +3,7 @@ import { FormsModule, NgForm } from '@angular/forms';
 import { ReportServiceService } from '../report-service.service';
 import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-home',
@@ -22,7 +23,8 @@ export class HomeComponent {
 
   constructor(
     private reportService: ReportServiceService,
-    private router: Router
+    private router: Router,
+    private titleService: Title
   ) {
     this.formData = { fullName: '', dob: '', gender: '' };
   }
@@ -42,7 +44,9 @@ export class HomeComponent {
 
     this.router.navigate(['/report']);
   }
-
+  ngOnInit() {
+    this.titleService.setTitle('NumeroPedia| Home');
+  }
   onImageLoad() {
     this.imageLoaded = true;
   }

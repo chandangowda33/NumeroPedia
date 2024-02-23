@@ -1,5 +1,5 @@
 .black_background {
-  background-color: #121212;
+  background-color: #101010;
 }
 
 .main_container {
@@ -7,6 +7,10 @@
 }
 .welcome_container {
   display: flex;
+}
+
+.blur {
+  filter: blur(10px);
 }
 
 .logo {
@@ -139,6 +143,7 @@
   font-size: 1.8rem;
   font-weight: 500;
   padding: 3.6rem 0;
+  line-height: 1.5;
 }
 
 .key_remedy {
@@ -146,6 +151,7 @@
   justify-content: center;
   gap: 3.6rem;
   align-items: center;
+  margin-top: 5.6rem;
 }
 
 .key_container,
