@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { ReportServiceService } from '../report-service.service';
 import { Router } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule, CommonModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })
@@ -17,6 +18,7 @@ export class HomeComponent {
     gender: '';
   };
   title: string = 'home';
+  imageLoaded = false;
 
   constructor(
     private reportService: ReportServiceService,
@@ -39,5 +41,9 @@ export class HomeComponent {
     );
 
     this.router.navigate(['/report']);
+  }
+
+  onImageLoad() {
+    this.imageLoaded = true;
   }
 }

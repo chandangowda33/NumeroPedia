@@ -99,3 +99,7 @@
   color: #00101a;
   box-shadow: 0 0 1.2rem #ebfc54;
 }
+
+.blur {
+  filter: blur(10px);
+}

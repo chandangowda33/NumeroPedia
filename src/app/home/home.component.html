@@ -1,6 +1,6 @@
 <header class="header">
   <a>
-    <img class="logo" src="../../assets/logo.png" alt="Numeropedia Logo" />
+    <img class="logo" src="../../assets/logo.jpg" alt="Numeropedia Logo" />
   </a>
 </header>
 
@@ -73,6 +73,8 @@
     <img
       class="numbers_img"
       src="../../assets/concept.jpg"
+      [ngClass]="{ blur: !imageLoaded }"
+      (load)="onImageLoad()"
       alt="numbers concept image"
     />
   </div>
