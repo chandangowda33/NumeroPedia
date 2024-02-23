@@ -71,6 +71,7 @@ export class ReportComponent implements OnInit {
   }
 
   navigateToHome() {
+    console.log('clicked');
     this.router.navigate(['/home']);
   }
 }
