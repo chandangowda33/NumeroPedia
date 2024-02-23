@@ -16,6 +16,7 @@ export class HomeComponent {
     dob: '';
     gender: '';
   };
+  title: string = 'home';
 
   constructor(
     private reportService: ReportServiceService,

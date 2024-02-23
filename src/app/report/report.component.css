@@ -183,8 +183,60 @@
   text-align: center;
 }
 
+.noEntry {
+  display: flex;
+  align-items: center;
+  padding: 20% 0 0;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
 .loader {
   display: flex;
   align-items: center;
   padding: 20% 50%;
+}
+
+.message {
+  color: #fcde5c;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.icon {
+  color: red;
+}
+
+.message_div {
+  display: flex;
+  gap: 1.2rem;
+
+  align-items: center;
+}
+
+.goBackButton,
+.goBackButton:link,
+.goBackButton:active {
+  padding: 1.2rem;
+  background-color: #ffd208;
+  border-radius: 1.8rem;
+  color: black;
+  border: none;
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-bottom: 1.8rem;
+}
+
+.goBackButton:hover,
+.goBackButton:visited {
+  margin-bottom: 1.2rem;
+  padding: 1.2rem;
+  background-color: #fdd41b;
+  border-radius: 1.8rem;
+  color: black;
+  border: none;
+  font-weight: 700;
+  font-size: 1.2rem;
+  box-shadow: 0 0 1rem #f8d84a;
+  transition: all 0.2s;
 }

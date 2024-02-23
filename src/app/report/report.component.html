@@ -1,5 +1,18 @@
-<app-loading-spinner *ngIf="!report" class="loader"></app-loading-spinner>
-<div class="main_container black_background" *ngIf="report">
+<app-loading-spinner
+  *ngIf="!report && noDetailsErrorMsg === ''"
+  class="loader"
+></app-loading-spinner>
+<div class="noEntry" *ngIf="noDetailsErrorMsg !== ''">
+  <div class="message_div">
+    <i class="material-icons note_icon icon">error_outline</i>
+    <h2 class="message">{{ noDetailsErrorMsg }}</h2>
+  </div>
+  <button class="goBackButton" (click)="navigateToHome()">Go Back Home</button>
+</div>
+<div
+  class="main_container black_background"
+  *ngIf="report && report.mulankNumber"
+>
   <a>
     <img class="logo" src="../../assets/logo.png" alt="Numeropedia Logo" />
   </a>

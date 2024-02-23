@@ -7,9 +7,9 @@ import { Observable } from 'rxjs';
 })
 export class ReportServiceService {
   private baseUrl = 'https://numeropedia.onrender.com/api/v1/';
-  dob = '1996-03-05';
-  fullName = 'Chandan Gowda B S';
-  gender = 'male';
+  dob = '';
+  fullName = '';
+  gender = '';
   mulankNumber = 4;
   destinyNumber = 8;
   constructor(private http: HttpClient) {}
