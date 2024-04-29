@@ -13,60 +13,64 @@
     <h5 class="enterDetails">
       Please enter below details to know your DOB says about you.
     </h5>
-    <div class="detailsForm">
-      <form
-        class="form form--details"
-        #formDetails="ngForm"
-        (ngSubmit)="formSubmit(formDetails)"
-      >
-        <div class="detailsEntry">
-          <div class="formSet">
-            <label class="label" for="fullName">Full Name:</label>
-            <input
-              class="input"
-              type="text"
-              id="fullName"
-              name="fullName"
-              placeholder="Enter your full name here.."
-              [(ngModel)]="formData.fullName"
-              required
-            />
+    <div class="backgroundImageDiv">
+      <div class="detailsForm">
+        <form
+          class="form form--details"
+          #formDetails="ngForm"
+          (ngSubmit)="formSubmit(formDetails)"
+        >
+          <div class="detailsEntry">
+            <div class="formSet">
+              <label class="label" for="fullName">Full Name:</label>
+              <input
+                class="input"
+                type="text"
+                id="fullName"
+                name="fullName"
+                placeholder="Enter your full name here.."
+                [(ngModel)]="formData.fullName"
+                required
+              />
+            </div>
+
+            <div class="formSet">
+              <label class="label" for="dob">Date of Birth:</label>
+              <input
+                class="input"
+                type="date"
+                id="dob"
+                [(ngModel)]="formData.dob"
+                name="dob"
+                required
+              />
+            </div>
+
+            <div class="formSet">
+              <label class="label">Gender:</label>
+              <select
+                class="input"
+                name="gender"
+                id="gender"
+                [(ngModel)]="formData.gender"
+                required
+              >
+                <option value="" disabled selected>
+                  Select your gender here
+                </option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+            </div>
           </div>
 
-          <div class="formSet">
-            <label class="label" for="dob">Date of Birth:</label>
-            <input
-              class="input"
-              type="date"
-              id="dob"
-              [(ngModel)]="formData.dob"
-              name="dob"
-              required
-            />
+          <div class="submit">
+            <button class="btn" type="submit">Get my Report</button>
           </div>
+        </form>
+      </div>
 
-          <div class="formSet">
-            <label class="label">Gender:</label>
-            <select
-              class="input"
-              name="gender"
-              id="gender"
-              [(ngModel)]="formData.gender"
-              required
-            >
-              <option value="" disabled selected>
-                Select your gender here
-              </option>
-              <option value="male">Male</option>
-              <option value="female">Female</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="submit">
-          <button class="btn" type="submit">Get my Report</button>
-        </div>
-      </form>
+      <img src="../../assets/concept.jpg" class="backgroundImage" />
     </div>
   </div>
   <div class="conceptImage">

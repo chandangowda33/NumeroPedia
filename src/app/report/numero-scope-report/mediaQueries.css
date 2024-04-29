@@ -1,0 +1,117 @@
+@media screen and (max-width: 850px) {
+  .numeroscope_number {
+    font-size: 7.8rem;
+  }
+  .numeroscope_grid_heading {
+    padding: 1.2rem 0rem;
+  }
+}
+
+@media screen and (max-width: 775px) {
+  .numeroscope_grid_heading {
+    font-size: 1.5rem;
+  }
+
+  .numeroscope_number {
+    font-size: 7.2rem;
+  }
+
+  .numeroscope_details {
+    flex: 0 0 58%;
+  }
+  .numeroscope_characterstic {
+    font-size: 3rem;
+  }
+
+  .numeroscope_description {
+    padding: 3.6rem 1.2rem;
+    word-spacing: 1;
+    font-size: 2.4rem;
+    line-height: 1;
+  }
+
+  .hurray {
+    font-size: 2.4rem;
+  }
+
+  .rajyogTrait {
+    font-size: 4.8rem;
+  }
+}
+
+@media screen and (max-width: 675px) {
+  .numeroscope_description {
+    font-size: 1.8rem;
+  }
+
+  .numeroscope_carousel {
+    width: 90%;
+  }
+
+  .numeroscope_characterstic {
+    margin: 0 2.4rem;
+  }
+
+  .rajyogTrait {
+    font-size: 4.2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .rajyogTrait {
+    font-size: 3.6rem;
+  }
+
+  .hurray {
+    font-size: 2.1 rem;
+  }
+
+  .numeroscope_carousel {
+    flex-direction: column;
+  }
+
+  .numeroscope_grid_container {
+    margin: 1.2rem 10rem;
+  }
+
+  .numeroscope_characterstic {
+    margin-bottom: 1.2rem;
+  }
+
+  .navigation_buttons {
+    margin-bottom: 1.2rem;
+  }
+
+  .rajyog_container {
+    margin: 1.2rem;
+  }
+
+  .numeroscope_description {
+    padding: 2.4rem 1.2rem;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .hurray {
+    font-size: 1.8rem;
+  }
+  .rajyogTrait {
+    font-size: 3rem;
+  }
+  .icon {
+    padding: 0.3rem;
+  }
+  .numeroscope_grid_container {
+    margin: 1.2rem 7rem;
+  }
+  .numeroscope_description {
+    word-spacing: 0.3rem;
+    padding: 0.3rem 1.2rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .numeroscope_grid_container {
+    margin: 1.2rem 5rem;
+  }
+}

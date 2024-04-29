@@ -7,11 +7,14 @@ import { Observable } from 'rxjs';
 })
 export class ReportServiceService {
   private baseUrl = 'https://numeropedia.onrender.com/api/v1/';
-  dob = '';
-  fullName = '';
-  gender = '';
-  mulankNumber = 4;
-  destinyNumber = 8;
+  // private baseUrl = '127.0.0.1:3000/api/v1/';
+
+  dob = '1998-06-19';
+  fullName = 'Chandan';
+  gender = 'male';
+  mulankNumber: Number | undefined;
+  destinyNumber: Number | undefined;
+
   constructor(private http: HttpClient) {}
 
   setInfo(fullName: string, dob: string, gender: string) {
@@ -32,5 +35,11 @@ export class ReportServiceService {
 
   getRajyog(pattern: any): Observable<any> {
     return this.http.get(`${this.baseUrl}numeroscope/rajyog/${pattern}`);
+  }
+
+  getCombination(): Observable<any> {
+    const pattern = this.mulankNumber + '&' + this.destinyNumber;
+
+    return this.http.get(`${this.baseUrl}numeroscope/combination/${pattern}`);
   }
 }

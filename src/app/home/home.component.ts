@@ -10,7 +10,7 @@ import { Title } from '@angular/platform-browser';
   standalone: true,
   imports: [FormsModule, CommonModule],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.css',
+  styleUrls: ['./home.component.css', './mediaQuery.css'],
 })
 export class HomeComponent {
   formData: {

@@ -62,13 +62,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex: 0 0 70rem;
+  flex: 0 0 60%;
 }
 
 .numeroscope_characterstic {
   flex: 0 0 85%;
   color: #4cb9fd;
   font-size: 3.6rem;
+  margin: 0 1.2rem;
   display: flex;
   align-items: center;
   font-weight: 700;

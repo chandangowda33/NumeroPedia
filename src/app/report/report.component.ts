@@ -6,13 +6,19 @@ import { NumeroScopeReportComponent } from './numero-scope-report/numero-scope-r
 import { LoadingSpinnerComponent } from './loading-spinner/loading-spinner.component';
 import { Router } from '@angular/router';
 import { Title } from '@angular/platform-browser';
+import { CombinationComponent } from './combination/combination.component';
 
 @Component({
   selector: 'app-report',
   standalone: true,
   templateUrl: './report.component.html',
-  styleUrl: './report.component.css',
-  imports: [CommonModule, NumeroScopeReportComponent, LoadingSpinnerComponent],
+  styleUrls: ['./report.component.css', './mediaQueries.css'],
+  imports: [
+    CommonModule,
+    NumeroScopeReportComponent,
+    LoadingSpinnerComponent,
+    CombinationComponent,
+  ],
 })
 export class ReportComponent implements OnInit {
   title: string = 'Your Report';

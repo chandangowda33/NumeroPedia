@@ -4,9 +4,8 @@
   margin: 1.2rem;
 }
 
-.numbers_img {
-  height: 48rem;
-  width: 36rem;
+.backgroundImage {
+  display: none;
 }
 
 .welcomeNote {
@@ -37,7 +36,7 @@
 .conceptImage {
   flex: 0 0 35%; /* flex-grow: 0, flex-shrink: 0, flex-basis: 25% */
   margin-top: -1.2rem;
-  margin-left: 2.4rem;
+  margin-left: 1.2rem;
 }
 
 .detailsEntry {
@@ -46,6 +45,8 @@
 }
 
 .numbers_img {
+  height: 48rem;
+  width: 36rem;
   box-shadow: 0 0 3.6rem #50c1d4;
   margin: 5.4rem 0 0 7.2rem;
 }

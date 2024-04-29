@@ -8,7 +8,7 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './numero-scope-report.component.html',
-  styleUrl: './numero-scope-report.component.css',
+  styleUrls: ['./numero-scope-report.component.css', './mediaQueries.css'],
 })
 export class NumeroScopeReportComponent implements OnInit {
   [x: string]: any;

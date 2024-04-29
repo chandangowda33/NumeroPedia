@@ -56,20 +56,16 @@
 
 .note_description {
   color: rgb(0, 0, 0);
-  font-size: 2.1rem;
+  font-size: 1.8rem;
   font-weight: 500;
   padding: 2.4rem;
   display: block;
-  line-height: 1.2;
+  line-height: 1.1;
+  word-spacing: 1px;
 }
 
 .note_container {
   display: flex;
-}
-
-.note_description {
-  flex: 0 0 95%;
-  word-spacing: 1px;
 }
 
 .note_icon {
@@ -142,21 +138,22 @@
   text-align: center;
   font-size: 1.8rem;
   font-weight: 500;
-  padding: 3.6rem 0;
+  padding: 2.4rem 0.3rem;
   line-height: 1.5;
 }
 
 .key_remedy {
   display: flex;
   justify-content: center;
-  gap: 3.6rem;
-  align-items: center;
+  align-items: stretch;
+  gap: 2.4rem;
+
   margin-top: 5.6rem;
 }
 
 .key_container,
 .remedies_container {
-  padding: 2.4rem;
+  padding: 2.4rem 0.3rem;
   font-size: 2.4rem;
   color: #001928;
   background-color: #b4effa;
@@ -165,8 +162,8 @@
   align-items: center;
   gap: 1.2rem;
   line-height: 1.1;
-  flex: 0 0 30%;
-  height: 37.2rem;
+  flex: 0 0 35%;
+
   border-radius: 1.2rem;
   box-shadow: 0 0 0.6rem #a1ebf8;
   margin: 1.2rem;

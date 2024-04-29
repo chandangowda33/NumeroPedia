@@ -1,0 +1,141 @@
+@media screen and (max-width: 1175px) {
+  .classicImg {
+    margin: 3.6rem 0;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .classicImg {
+    width: 23rem;
+    height: 25rem;
+  }
+  .mulank_description {
+    padding: 2.4rem;
+    line-height: 1.1;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .classicImg {
+    display: none;
+  }
+
+  .welcome {
+    flex: 0 0 100%;
+  }
+
+  .note_description {
+    font: 1.8rem;
+    padding: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .key_container {
+    flex: 0 0 40%;
+  }
+  .name_welcome {
+    font-size: 6.6rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .logo {
+    margin-bottom: 1.2rem;
+  }
+
+  .note_container {
+    margin: 1.2rem 5.4rem;
+    font-size: 1.2rem;
+  }
+
+  .note_icon {
+    font-size: 3.6rem;
+    padding-left: 1.2rem;
+  }
+
+  .personal_details {
+    font-size: 2.4rem;
+  }
+
+  .mulank_star_governing {
+    font-size: 4.8rem;
+  }
+
+  .mulank_description {
+    line-height: 1;
+    font-size: 1.8rem;
+  }
+  .mulank_deatils {
+    font-size: 1.2rem;
+  }
+
+  .mulank_characterstic {
+    line-height: 1.2;
+    padding: 1.8rem 0.3rem;
+  }
+
+  .note_description {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 675px) {
+  .name_welcome {
+    font-size: 5.4rem;
+  }
+
+  .personal_details {
+    font-size: 2.1rem;
+  }
+
+  .mulank_description {
+    padding: 1.2rem;
+  }
+
+  .mulank_characterstic_div {
+    margin: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .mulank_star_governing {
+    font-size: 3.6rem;
+  }
+
+  .mulank_description {
+    font-size: 1.5rem;
+  }
+
+  .mulank_characterstic {
+    font-size: 1.5rem;
+  }
+
+  .key_remedy {
+    margin-top: 1.8rem;
+
+    /* flex: 1 0 auto; */
+  }
+
+  .key,
+  .remedies {
+    font-size: 1.8rem;
+  }
+
+  .strong {
+    font-size: 2.4rem;
+  }
+
+  .key_container,
+  .remedies_container {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .hurray {
+    font-size: 1.8rem;
+  }
+  .note_container {
+    margin: 1.2rem;
+  }
+}
